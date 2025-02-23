@@ -84,8 +84,3 @@ function nextLevel() {
   document.getElementById("level-title").innerText = `关卡 ${currentLevel}`;
 }
 
-function showFinalReward() {
-  document.getElementById("game").classList.add("hidden");
-  document.getElementById("badges").classList.add("hidden");
-  document.getElementById("final-reward").classList.remove("hidden");
-}
