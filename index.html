@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字谜大冒险</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>字谜大冒险</h1>
+    <div id="home">
+      <p>这里有3个关卡，24个有趣的字谜等着你来挑战！每闯过一关，就能获得一枚徽章，集齐3枚徽章，你就是“字谜之王”！</p>
+      <button onclick="startGame()">开始闯关</button>
+    </div>
+    <div id="game" class="hidden">
+      <h2 id="level-title">关卡 1</h2>
+      <p id="riddle-text"></p>
+      <input type="text" id="answer-input" placeholder="输入你的答案">
+      <button onclick="checkAnswer()">提交</button>
+      <p id="result-message"></p>
+    </div>
+    <div id="badges" class="hidden">
+      <h2>徽章</h2>
+      <div id="badge-container">
+        <!-- 徽章将通过JavaScript动态添加 -->
+      </div>
+    </div>
+    <div id="final-reward" class="hidden">
+      <h2>恭喜你成为字谜之王！</h2>
+      <div class="trophy">🏆</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
